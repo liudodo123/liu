@@ -15,7 +15,7 @@ public class Topic extends BaseTopic<Topic> {
 	
 	public List<Topic>list(){
 		List<Topic> result=Topic.dao.find("select * from topic");
-		System.out.println("s");
+		System.out.println("s1");
 		return result;
 	}
 	public long count(){
