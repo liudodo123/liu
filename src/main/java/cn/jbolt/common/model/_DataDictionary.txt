@@ -1,0 +1,46 @@
+Table: comments
+----------+---------------+------+-----+---------+---------
+ Field    | Type          | Null | Key | Default | Remarks 
+----------+---------------+------+-----+---------+---------
+ cid      | INT(10)       | NO   | PRI |         |         
+ cnid     | INT(10)       | NO   |     |         |         
+ ccontent | VARCHAR(3000) | NO   |     |         |         
+ cdate    | DATETIME(19)  | NO   |     |         |         
+ cip      | VARCHAR(100)  | NO   |     |         |         
+ cauthor  | VARCHAR(100)  | YES  |     |         |         
+ uid      | INT(10)       | YES  |     |         |         
+ uuid     | INT(10)       | YES  |     |         |         
+----------+---------------+------+-----+---------+---------
+
+Table: news
+-------------+---------------+------+-----+---------+---------
+ Field       | Type          | Null | Key | Default | Remarks 
+-------------+---------------+------+-----+---------+---------
+ nid         | INT(10)       | NO   | PRI |         |         
+ ntid        | INT(10)       | NO   |     |         |         
+ ntitle      | VARCHAR(500)  | NO   |     |         |         
+ nauthor     | VARCHAR(50)   | NO   |     |         |         
+ ncreateDate | DATETIME(19)  | YES  |     |         |         
+ npicPath    | VARCHAR(255)  | YES  |     |         |         
+ ncontent    | TEXT(65535)   | NO   |     |         |         
+ nmodifyDate | DATETIME(19)  | YES  |     |         |         
+ nsummary    | VARCHAR(4000) | NO   |     |         |         
+-------------+---------------+------+-----+---------+---------
+
+Table: news_users
+-------+-------------+------+-----+---------+---------
+ Field | Type        | Null | Key | Default | Remarks 
+-------+-------------+------+-----+---------+---------
+ uid   | INT(10)     | NO   | PRI |         |         
+ uname | VARCHAR(20) | NO   |     |         |         
+ upwd  | VARCHAR(20) | NO   |     |         |         
+-------+-------------+------+-----+---------+---------
+
+Table: topic
+-------+-------------+------+-----+---------+---------
+ Field | Type        | Null | Key | Default | Remarks 
+-------+-------------+------+-----+---------+---------
+ tid   | INT(10)     | NO   | PRI |         |         
+ tname | VARCHAR(50) | NO   |     |         |         
+-------+-------------+------+-----+---------+---------
+

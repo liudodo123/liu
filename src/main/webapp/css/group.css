@@ -1,0 +1,151 @@
+.mainContainer{
+	width: 1200px;
+    margin: 0 auto;
+}
+.lunbo{
+	width: 1200px;
+    height: 164px;
+    overflow: hidden;
+    margin-top: 10px;
+    position: relative;
+}
+.leftContainer {
+    width: 918px;
+    float: left;
+}
+.rightContainer h2, .leftContainer h2, .recomContainer h2 {
+    height: 46px;
+    line-height: 46px;
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 10px;
+    
+}
+.classifyContainer {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 6px 20px;
+    font-size: 14px;
+    color: #848484;
+}
+.classifyContainer dl {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+    border-bottom: 1px dashed #dcdcdc;
+}
+.classifyContainer dt, .classifyContainer .keyword {
+    /* width: 66px; */
+    width: 70px;
+    float: left;
+    text-align: right;
+    padding-right: 8px;
+}
+.classifyContainer dd {
+    float: left;
+    cursor: pointer;
+    margin-right: 12px;
+}
+.classifyContainer .active, classifyContainer dd span:hover {
+    color: #fff;
+    background-color: #3d9fe1;
+    border-radius: 4px;
+}
+.classifyContainer > div {
+    height: 46px;
+    line-height: 46px;
+}
+.txtSearch {
+    width: 156px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+input[type='button'] {
+    outline: none;
+}
+.btnSearch {
+    width: 50px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    color: #000;
+    cursor: pointer;
+}
+.rightContainer {
+    width: 270px;
+    margin-left: 6px;
+    float: left;
+}
+.rightContainer h2, .leftContainer h2, .recomContainer h2 {
+    height: 46px;
+    line-height: 46px;
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 10px;
+}
+.rightItemContainer {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+}
+.ulPublic {
+    margin: 14px 18px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #848484;
+    overflow: hidden;
+}
+.ulPublic a {
+    color: #848484;
+}
+.rankContainer {
+    height: 46px;
+    line-height: 46px;
+    background-color: #fbfbfb;
+    border: 1px solid #eaeaea;
+    margin: 12px auto;
+    font-size: 14px;
+    text-align: center;
+}
+.rankContainer > ul li:first-of-type {
+    color: #999;
+    border-right: 1px solid #eaeaea;
+    cursor: default;
+    
+}
+.rankContainer > ul li{
+	float: left;
+}
+.rankContainer > ul li.active {
+    color: #ff6600;
+}
+.rankContainer > ul li.active .sort_desc {
+    background-position: -29px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

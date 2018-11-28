@@ -1,0 +1,348 @@
+
+2018-11-22 15:04:47
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:04:47
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:04:48
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:04:48
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:04:48
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:04:48
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:04:48
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:04:48
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:04:48
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:04:48
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:04:48
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:04:48
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:05:45
+[ERROR]-[Thread: http-bio-8080-exec-3]-[com.jfinal.core.ActionHandler.handle()]: /websocket/index
+java.lang.RuntimeException: File not found : E:\刘乙泽。\Y2\Y2Eclipse\jfinal_jbolt\src\main\webapp/websocket/WebSocket.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:159)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:144)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:106)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-11-22 15:05:45
+[ERROR]-[Thread: http-bio-8080-exec-3]-[com.jfinal.core.JFinalFilter.doFilter()]: /websocket/index
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:638)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:214)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:60)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:122)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-11-22 15:08:58
+[ERROR]-[Thread: http-bio-8080-exec-1]-[com.jfinal.core.ActionHandler.handle()]: /websocket/index
+java.lang.RuntimeException: File not found : E:\刘乙泽。\Y2\Y2Eclipse\jfinal_jbolt\src\main\webapp/websocket/WebSocket.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:159)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:144)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:106)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-11-22 15:08:58
+[ERROR]-[Thread: http-bio-8080-exec-1]-[com.jfinal.core.JFinalFilter.doFilter()]: /websocket/index
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:638)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:214)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:60)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:122)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-11-22 15:09:12
+[ERROR]-[Thread: http-bio-8080-exec-4]-[com.jfinal.core.ActionHandler.handle()]: /websocket/
+java.lang.RuntimeException: File not found : E:\刘乙泽。\Y2\Y2Eclipse\jfinal_jbolt\src\main\webapp/websocket/WebSocket.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:159)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:144)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:106)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-11-22 15:09:12
+[ERROR]-[Thread: http-bio-8080-exec-4]-[com.jfinal.core.JFinalFilter.doFilter()]: /websocket/
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:638)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:214)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:60)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:122)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-11-22 15:13:37
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:13:37
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:13:37
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:13:37
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:13:37
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:13:37
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:13:37
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:13:37
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:13:37
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:13:37
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:13:37
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:13:37
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:14:06
+[ERROR]-[Thread: http-bio-8080-exec-2]-[com.jfinal.core.ActionHandler.handle()]: /index
+java.lang.RuntimeException: File not found : E:\刘乙泽。\Y2\Y2Eclipse\jfinal_jbolt\src\main\webapp/index/WebSocket.html
+	at com.jfinal.template.source.FileSource.getContent(FileSource.java:70)
+	at com.jfinal.template.Engine.buildTemplateBySourceFactory(Engine.java:159)
+	at com.jfinal.template.Engine.getTemplate(Engine.java:144)
+	at com.jfinal.render.TemplateRender.render(TemplateRender.java:61)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:106)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-11-22 15:14:06
+[ERROR]-[Thread: http-bio-8080-exec-2]-[com.jfinal.core.JFinalFilter.doFilter()]: /index
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:638)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:214)
+	at com.jfinal.render.ErrorRender.render(ErrorRender.java:60)
+	at com.jfinal.core.ActionHandler.handle(ActionHandler.java:122)
+	at com.jfinal.core.JFinalFilter.doFilter(JFinalFilter.java:86)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-11-22 15:14:51
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:14:51
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:14:51
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:14:51
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:14:51
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:14:51
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:14:51
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:14:51
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:14:51
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:14:51
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:14:51
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:14:51
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:16:42
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:16:42
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:16:42
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:16:42
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:16:42
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:16:42
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:16:42
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:16:42
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:16:42
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:16:42
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:16:42
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
+
+2018-11-22 15:16:42
+[WARN]-[Thread: localhost-startStop-1]-[com.jfinal.core.paragetter.ParaProcessorBuilder.createParaGetter()]: you should add compiler flag -parameters to support parameter auto binding
