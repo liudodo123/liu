@@ -16,6 +16,7 @@ public class Topic extends BaseTopic<Topic> {
 	public List<Topic>list(){
 		List<Topic> result=Topic.dao.find("select * from topic");
 		return result;
+		
 	}
 	public long count(){
 		long count=Db.queryLong("select count(*) from topic");
