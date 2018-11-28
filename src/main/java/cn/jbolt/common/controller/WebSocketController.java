@@ -28,24 +28,10 @@ import cn.jbolt.common.thread.MyThread;
 public class WebSocketController {
 	private int currentIndex;
 	private Session session=null;
-	//MyThread thread1=new MyThread(session);
-	//EThread eThread=new EThread(session);
-    //Thread thread=new Thread(thread1);
-    //Thread threade=new Thread(eThread);
-    //用来存放每个客户端对应的MyWebSocket对象。
     private static CopyOnWriteArraySet<WebSocketController> webSocketSet = new CopyOnWriteArraySet<WebSocketController>();
     
-
-
 	@OnOpen
 	public void onOpen(Session session) throws IOException, EncodeException{
-		 	/*this.session=session;
-	        webSocketSet.add(this); 
-	        System.out.println(webSocketSet);
-	        session.getBasicRemote().sendText("ss");
-	        //开启一个线程对数据库中的数据进行轮询
-	        //thread.start();
-	        threade.start();*/
 	        EThread thread =null;
 	        thread=new EThread(session);
 	        thread.start();
@@ -53,35 +39,14 @@ public class WebSocketController {
 
 	@OnClose
 	public void onClose(Session session) {
-		//thread1.stopMe();
 		EThread thread =null;
 		thread.stopMe();
         webSocketSet.remove(this);
 	}
 
 	
-	/*@OnMessage
-	public void onMessage(Long sum) throws IOException{
-		System.out.println("发生变化"+sum);
-        try {
-            sendMessage();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-	}
-	
-	public void sendMessage() throws IOException{
-        //群发消息
-        for(WebSocketController item: webSocketSet){
-            item.session.getBasicRemote().sendText("sss");
-        }
-        System.out.println(session+"===============================session");
-    }*/
-	
 	@OnMessage
 	public void onMessage(String message, Session session) throws IOException{
-		//onMessage(message, session);
 	}
 	
 	public void sendMessage(String message) throws IOException{

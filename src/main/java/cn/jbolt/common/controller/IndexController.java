@@ -9,8 +9,8 @@ import cn.jbolt.common.model.Topic;
 public class IndexController extends Controller{
 	
 	public void index(){
-		render("echarts.html");
-		//render("WebSocket.html");
+		//render("echarts.html");
+		render("WebSocket.html");
 	}
 	public void echarts(){
 		List<Topic> result=Topic.dao.find("select * from topic");

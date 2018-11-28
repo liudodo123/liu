@@ -103,34 +103,6 @@
 				alert('websocket链接没有建立成功');
 			}
 		}
-	
-		 /* function loadData(option) {
-			$.ajax({
-				type : 'post',	//传输类型
-				async : false,	//同步执行
-				url : '/echarts',	
-				data : {},
-				dataType : 'json', //返回数据形式为json
-				success : function(result) {
-					if (result) {
-						//初始化xAxis[0]的data
-						option.xAxis[0].data = [];
-						for (var i=0; i<result.length; i++) {
-							option.xAxis[0].data.push(result[i].tname);
-						}
-						//初始化series[0]的data
-						option.series[0].data = [];
-						for (var i=0; i<result.length; i++) {
-							option.series[0].data.push(result[i].tid);
-						}
-					}
-				},
-				error : function(errorMsg) {
-					alert("加载数据失败");
-				}
-			});//AJAX
-		}//loadData() */
-		
 	</script>
 	
 	</body>
