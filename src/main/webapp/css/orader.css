@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: '微软雅黑';
+}
+body {
+    background-color: #f6f6f6;
+    font-family: Microsoft YaHei;
+    color: #333;
+}
+.iframe_main {
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 0px;
+    min-height: 500px;
+    float: right;
+    background-color: #F6F6F6;
+}
+.font_14 {
+    font-size: 14px;
+}
+#subpage_title {
+    height: 36px;
+    width: 989px;
+    float: left;
+    background-color: #F0F0F2;
+    line-height: 36px;
+    color: #505050;
+    font-family: 宋体;
+    border-right: 1px solid #C8C8C8;
+}
+#subpage_title img {
+    margin-right: 10px;
+    margin-left: 24px;
+}
+#subpage_content {
+    width: 977px;
+    float: left;
+    min-height: 760px;
+    padding-bottom: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-left: 10px;
+}
+.p_title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #3d9fe1;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px 5px 0 0;
+}
+.p_title img {
+    margin: auto 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

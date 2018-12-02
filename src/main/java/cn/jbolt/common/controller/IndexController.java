@@ -10,7 +10,7 @@ public class IndexController extends Controller{
 	
 	public void index(){
 		//render("echarts.html");
-		render("WebSocket.html");
+		renderJsp("index.jsp");
 	}
 	public void echarts(){
 		List<Topic> result=Topic.dao.find("select * from topic");

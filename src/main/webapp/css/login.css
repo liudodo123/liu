@@ -1,0 +1,268 @@
+body {
+    background-color: #f6f6f6;
+    font-family: Microsoft YaHei;
+    color: #333;
+}
+.topContainer {
+    height: 100px;
+    line-height: 100px;
+}
+.mainContainer {
+    width: 1200px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+    border: none;
+}
+.topContainer img {
+    vertical-align: middle;
+}
+img {
+    border: none;
+}
+#loginBgContainer {
+    width: 100%;
+    height: 516px;
+    background: url(../Images/registerBg.png) no-repeat center;
+}
+#loginBgContainer > div {
+    height: 474px;
+}
+.loginContainer, .registerContainer {
+    width: 320px;
+    height: 340px;
+    background-color: #fff;
+    padding: 0 14px;
+    float: right;
+    margin-top: 62px;
+}
+.loginTitle, .registerTitle {
+    height: 66px;
+    line-height: 46px;
+    font-size: 18px;
+    color: #00bcff;
+    border-bottom: 1px solid #eee;
+}
+#loginBgContainer .noAccount {
+    font-size: 14px;
+    color: #999999;
+    float: right;
+}
+.noAccount > a {
+    color: #00bcff;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.noVisible {
+    visibility: hidden;
+}
+.txtContainer.txtUserNameContainer {
+    margin-top: 0px;
+}
+.txtContainer {
+    position: relative;
+    border: 1px solid #bdbdbd;
+    margin: 22px auto;
+}
+.txtLogo {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-right: 1px solid #bdbdbd;
+    vertical-align: top;
+}
+#loginBgContainer .userName, #loginBgContainer .userPwd, #loginBgContainer .activeCode, #loginBgContainer .userPhone, #loginBgContainer .inviteCode {
+    width: 274px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+.txtContainer {
+    position: relative;
+    border: 1px solid #bdbdbd;
+    margin: 22px auto;
+}
+.txtLogo {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-right: 1px solid #bdbdbd;
+    vertical-align: top;
+}
+.txtLogo img {
+    margin-top: 11px;
+}
+#login_button, .register_button {
+    width: 318px;
+    height: 36px;
+    display: block;
+    margin: 16px auto;
+    background: #3d9fe1;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    font-family: Microsoft YaHei;
+    cursor: pointer;
+}
+
+/*
+      注册
+ * */
+.registerContainer {
+    height: 352px;
+    margin-top: 18px;
+}
+.registerTitle {
+    height: 42px;
+    line-height: 42px;
+}
+.registerContainer .itemTitle {
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+    color: #999;
+    font-family: 微软雅黑;
+    font-size: 14px;
+}
+#loginBgContainer .registerContainer .userName, #loginBgContainer .registerContainer .userPwd, #loginBgContainer .registerContainer .activeCode, #loginBgContainer .registerContainer .userPhone, #loginBgContainer .registerContainer .inviteCode {
+    width: 228px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #ccc;
+}
+.register_button_gray {
+    background: #b8b8b8;
+}
+.register_button {
+    width: 300px;
+    background: #ff8b36;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    font-weight: normal;
+    margin: 10px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
