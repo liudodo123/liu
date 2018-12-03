@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
     <head>
         <meta charset="utf-8" />
@@ -10,6 +12,7 @@
     	<div class="topContainer mainContainer">
             <a href="#"><img src="Images/logo.png" /></a>
         </div>
+        
 <div id="loginBgContainer">
             <div class="mainContainer">
                 <div class="loginContainer">
@@ -17,27 +20,22 @@
                         <span>登录</span>
                         <span class="noAccount">没有账号？<a href="register.html" target="_blank">免费注册</a></span>
                     </p>
-                    <form action="" method="post">
+                    <form action="/login/login" method="post">
                     <div class="txtContainer txtUserNameContainer">
                         <span class="txtLogo">
                             <img src="Images/img_loginName.png" />
                         </span>
-                        <input type="text" class="userName" id="txt_username" placeholder="请输入用户名/手机号" autocomplete="off" />
+                        <input type="text" class="userName" name="userName" id="txt_username" placeholder="请输入用户名/手机号" autocomplete="off" />
                     </div>
                     <div class="txtContainer">
                         <span class="txtLogo">
                             <img src="Images/img_loginPassword.png" />
                         </span>
-                        <input type="password" class="userPwd" id="txt_pwd" placeholder="请输入密码" />
+                        <input type="password" class="userPwd" name="userPwd" id="txt_pwd" placeholder="请输入密码" />
                     </div>
-                    
-                    <div class="verifyContainer hide" style="display:none">
-                        <input type="text" class="identifyCode" id="txt_registerVerify" placeholder="验证码" />
-                        <img id="img_verify" class="img_verify" index="1" src="" alt="" />
-                        <span class="linkBlur">看不清楚？</span>
-                    </div>
-                    <input type="button" id="login_button" value="登&nbsp;&nbsp;&nbsp;&nbsp;录" />
+                    <input type="submit" id="login_button" value="登&nbsp;&nbsp;&nbsp;&nbsp;录" />
                     </form>
+                    
                     <div id="ISdisplay" class="hove">   
 						</div>
                     <div>
@@ -45,9 +43,10 @@
                         <label for="check_auto" class="font_12">记住账号</label>
                     </div>
                     <div class="socialLogin">
-                        <a class="forgetPwd" href="../../Forget/RetrieveOne.aspx" target="_blank" style="float: right">忘记密码?</a>
+                        <a class="forgetPwd" href="" target="_blank" style="float: right">忘记密码?</a>
                     </div>
                 </div>
+                
             </div>
         </div>
 <div>

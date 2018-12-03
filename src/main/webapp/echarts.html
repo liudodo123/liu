@@ -50,26 +50,32 @@
 				console.log(event.data);
 				var data = (event.data + '').split(',');
 				var a=event.data=(data[0]);
-				var a1='[{ "tid": "'+a+'"}]';
+				/* var a1='[{ "tid": "'+a+'"}]'; */
 				var b=event.data=(data[1]);
-				var b1='[{ "tname": "'+b+'"}]';
-				var cc='[{ "tname": "'+b+'","tid": '+a+'}]';
+				/* var b1='[{ "tname": "'+b+'"}]';
+				var cc='[{ "tname": "'+b+'","tid": '+a+'}]'; */
+				option.xAxis[0].data = [];
+				for (var i=0; i<b.length; i++) {
+					option.xAxis[0].data.push(b);
+					console.log(b);
+				}
+				option.series[0].data = [];
+				for (var i=0; i<a.length; i++) {
+					option.series[0].data.push(a);
+					console.log(a);
+				}
+				
 				/* var result = jQuery.parseJSON(cc); */
-				var result = eval('(' + cc + ')');
-				for (var i=0; i<result.length; i++) {
-					option.xAxis[0].data = [result[0].tname];
-					option.xAxis[0].data.push(result[0].tname);
-				}	
-					myChart.setOption(option);
-				/* if(result){
-					//初始化xAxis[0]的data
-					option.xAxis[0].data = [];
+				/* var result = eval('(' + cc + ')');
+				if(result){
+						//初始化xAxis[0]的data
+						option.xAxis[0].data = [];
 					for (var i=0; i<result.length; i++) {
-						option.xAxis[0].data.push(result[0].tname);
-						console.log(result[0].tname);
+						option.xAxis[0].data.push(result[i].tname);
+						console.log(result[i].tname);
 					}
-					//初始化series[0]的data
-					option.series[0].data = [];
+						//初始化series[0]的data
+						option.series[0].data = [];
 					for (var i=0; i<result.length; i++) {
 						option.series[0].data.push(result[i].tid);
 						console.log(result[i].tid);
@@ -79,6 +85,7 @@
 		        /* setMessageInnerHTML(event.data); */
 				var ta = document.getElementById("responseContent");
 				ta.value += event.data + "\r\n";
+				myChart.setOption(option);
 			};
 			socket.onopen = function(event){
 				var ta = document.getElementById("responseContent");
@@ -103,6 +110,7 @@
 				alert('websocket链接没有建立成功');
 			}
 		}
+		
 	</script>
 	
 	</body>

@@ -48,7 +48,8 @@ public class EThread extends Thread {
 		            	System.out.println(tname+"============================tname/n"+tid+
 		            	"==================================tid");
 		            	try {
-							session.getBasicRemote().sendText(list.get(i).getTid()+","+list.get(i).getTname());
+		            		session.getBasicRemote().sendText(list.get(i).getTid()+","+list.get(i).getTname());
+		            		/*session.getBasicRemote().sendText(list.get(i).getTname());*/
 						} catch (IOException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();

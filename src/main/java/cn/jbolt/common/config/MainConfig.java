@@ -10,7 +10,9 @@ import com.jfinal.core.JFinal;
 import com.jfinal.kit.PropKit;
 import com.jfinal.template.Engine;
 import cn.jbolt.common.controller.IndexController;
+import cn.jbolt.common.controller.LoginController;
 import cn.jbolt.common.controller.WebSocketHandler;
+import cn.jbolt.common.model.NewsUsers;
 import cn.jbolt.common.model.Topic;
 
 import com.jfinal.ext.interceptor.SessionInViewInterceptor;
@@ -24,6 +26,9 @@ public class MainConfig extends JFinalConfig {
 	 */
 	@Override
 	public void configConstant(Constants me) {
+		 
+	     me.setDevMode(true);
+		
 		//读取数据库配置文件
 		PropKit.use("config.properties");
 		//设置当前是否为开发模式
@@ -35,13 +40,13 @@ public class MainConfig extends JFinalConfig {
 		//设置默认下载文件路径 renderFile使用
 		me.setBaseDownloadPath("download");
 		//设置默认视图类型
-		me.setViewType(ViewType.JFINAL_TEMPLATE);
+		me.setViewType(ViewType.JSP);
 		//设置404渲染视图
 		//me.setError404View("404.html");
 		
 		//设置启用依赖注入
 		me.setInjectDependency(true);
-		
+        
 		
 	}
 	/**
@@ -51,7 +56,7 @@ public class MainConfig extends JFinalConfig {
 	public void configRoute(Routes me) {
 		//设置默认访问首页路由 可使用http://localhost:port 直接访问 如果80端口 port可以省略
 		me.add("/",IndexController.class);
-		
+		me.add("/login",LoginController.class);
 	}
 	/**
 	 * 配置JFinal插件
@@ -73,6 +78,7 @@ public class MainConfig extends JFinalConfig {
 		//如果使用了JFinal Model 生成器 生成了BaseModel 把下面注释解开即可
 		//_MappingKit.mapping(arp);
 		arp.addMapping("topic", Topic.class);
+		arp.addMapping("news_users", NewsUsers.class);
 		//添加到插件列表中
 		me.add(dbPlugin);
 		me.add(arp);

@@ -27,7 +27,6 @@ body {
     width: 100%;
     color: #494949;
     overflow: hidden;
-    margin-left: -40px;
     margin-top: -0.5px;
 }
 .user_menu_title {
@@ -74,7 +73,7 @@ ul li {
     list-style-position: inside;
     background-color: #fff;
     position: relative;
-    margin-left: -20px;
+    margin-left: 35px;
 }
 .menu_sub_ul > li a {
     text-decoration: none;

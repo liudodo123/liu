@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page  isELIgnored="false"%>  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -41,7 +43,7 @@
 						</li>
 						<li class="liSplitLine" style="display: inline-block;">|</li>
 						<li class="logout_show linkItem" style="display: inline-block;">
-							<a id="nav_login" class="linkItem_a" href="login.html">登录</a>
+							<a id="nav_login" class="linkItem_a" href="login.jsp">登录${sessionScope.user.uname}</a>
 						</li>
 						<!--未登录隐藏-->
 						<li class="login_show linkItem" id="nav_logout" style="display: none;" href="">[退出]</li>

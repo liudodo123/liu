@@ -17,7 +17,7 @@ public class TestSocket {
 	 
 			WebSocketContainer container = ContainerProvider.getWebSocketContainer();
 	 
-			String uri = "ws://localhost:8080/websocket";
+			String uri = "ws://localhost:8081/websocket";
 	 
 			System.out.println("Connecting to" + uri);
 	 

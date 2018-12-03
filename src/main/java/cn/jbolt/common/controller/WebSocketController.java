@@ -18,6 +18,8 @@ import javax.websocket.OnOpen;
 import javax.websocket.Session;
 import javax.websocket.server.ServerEndpoint;
 
+import org.json.JSONObject;
+
 import com.jfinal.template.io.Writer;
 
 import cn.jbolt.common.model.Topic;
