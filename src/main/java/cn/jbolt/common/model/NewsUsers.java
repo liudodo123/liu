@@ -8,4 +8,6 @@ import cn.jbolt.common.model.base.BaseNewsUsers;
 @SuppressWarnings("serial")
 public class NewsUsers extends BaseNewsUsers<NewsUsers> {
 	public static final NewsUsers dao = new NewsUsers().dao();
+	
+	
 }

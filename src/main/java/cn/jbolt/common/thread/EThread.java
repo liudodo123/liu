@@ -23,6 +23,8 @@ public class EThread extends Thread {
 	private int currentIndex;
 	private List<Topic> topics;
 	private Integer tid;
+	String string;
+	byte[] bytes;
     public void stopMe() {  
         stopMe = false;  
     } 
@@ -41,16 +43,31 @@ public class EThread extends Thread {
 		WebSocketController wbs=new WebSocketController();
 		 while(stopMe){
 	            List<Topic> list=new Topic().list();
+	            
 	            if (list!=null && currentIndex<list.size()) {
 		            for(int i=0;i<list.size();i++){
 		            	tname=list.get(i).getTname();
 		            	tid=list.get(i).getTid();
 		            	System.out.println(tname+"============================tname/n"+tid+
 		            	"==================================tid");
+		            	//创建json格式数据
+		                JSONObject jsonObject=new JSONObject();
+		                try {
+							jsonObject.put("tname", tname);
+							jsonObject.put("tid", tid);
+							//json转化成字符串
+					        string=jsonObject.toString();
+					        //字符串转化byte数组
+					        bytes=string.getBytes();
+					        System.out.println(jsonObject+"======================================");
+						} catch (JSONException e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
 		            	try {
-		            		session.getBasicRemote().sendText(list.get(i).getTid()+","+list.get(i).getTname());
-		            		/*session.getBasicRemote().sendText(list.get(i).getTname());*/
-						} catch (IOException e) {
+		            		  /*session.getBasicRemote().sendText(list.get(i).getTid()+","+list.get(i).getTname());*/
+		            		session.getBasicRemote().sendObject(jsonObject);
+						} catch (IOException | EncodeException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
@@ -58,7 +75,7 @@ public class EThread extends Thread {
 		            currentIndex = list.size();
 	            }
 	            try {
-	                Thread.sleep(1000);
+	                Thread.sleep(9000);
 	            } catch (InterruptedException e) {
 	                // TODO Auto-generated catch block
 	                e.printStackTrace();

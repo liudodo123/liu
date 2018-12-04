@@ -26,7 +26,11 @@ import cn.jbolt.common.model.Topic;
 import cn.jbolt.common.thread.EThread;
 import cn.jbolt.common.thread.MyThread;
 
-@ServerEndpoint(value="/websocket")
+@ServerEndpoint(
+		  value = "/websocket", 
+		  encoders = { MessageEncoder.class }, 
+		  decoders = { MessageDecoder.class }
+		)
 public class WebSocketController {
 	private int currentIndex;
 	private Session session=null;
@@ -38,17 +42,15 @@ public class WebSocketController {
 	        thread=new EThread(session);
 	        thread.start();
 	}
-
 	@OnClose
 	public void onClose(Session session) {
 		EThread thread =null;
 		thread.stopMe();
         webSocketSet.remove(this);
 	}
-
-	
 	@OnMessage
-	public void onMessage(String message, Session session) throws IOException{
+	public void onMessage(Topic topic, Session session) throws IOException, EncodeException{
+		
 	}
 	
 	public void sendMessage(String message) throws IOException{

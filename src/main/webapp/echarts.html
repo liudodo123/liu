@@ -54,10 +54,12 @@
 				var b=event.data=(data[1]);
 				/* var b1='[{ "tname": "'+b+'"}]';
 				var cc='[{ "tname": "'+b+'","tid": '+a+'}]'; */
-				option.xAxis[0].data = [];
+				var aa=option.xAxis[0].data = [];
+				aa+=b;
 				for (var i=0; i<b.length; i++) {
 					option.xAxis[0].data.push(b);
-					console.log(b);
+					console.log(aa);
+					b++;
 				}
 				option.series[0].data = [];
 				for (var i=0; i<a.length; i++) {
