@@ -1,18 +1,21 @@
 package cn.jbolt.common.thread;
 
 import java.io.IOException;
+import java.io.StringWriter;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.persistence.metamodel.SetAttribute;
 import javax.websocket.EncodeException;
 import javax.websocket.Session;
 
-import org.json.JSONException;
-import org.json.JSONObject;
+
 import cn.jbolt.common.controller.WebSocketController;
 import cn.jbolt.common.model.Topic;
+import net.sf.json.JSONObject;
 
 public class EThread extends Thread {
 	
@@ -43,45 +46,36 @@ public class EThread extends Thread {
 		WebSocketController wbs=new WebSocketController();
 		 while(stopMe){
 	            List<Topic> list=new Topic().list();
-	            
 	            if (list!=null && currentIndex<list.size()) {
-		            for(int i=0;i<list.size();i++){
+	            	for(int i=0;i<list.size();i++){
 		            	tname=list.get(i).getTname();
 		            	tid=list.get(i).getTid();
 		            	System.out.println(tname+"============================tname/n"+tid+
 		            	"==================================tid");
-		            	//创建json格式数据
-		                JSONObject jsonObject=new JSONObject();
-		                try {
-							jsonObject.put("tname", tname);
-							jsonObject.put("tid", tid);
-							//json转化成字符串
-					        string=jsonObject.toString();
-					        //字符串转化byte数组
-					        bytes=string.getBytes();
-					        System.out.println(jsonObject+"======================================");
-						} catch (JSONException e1) {
-							// TODO Auto-generated catch block
-							e1.printStackTrace();
-						}
-		            	try {
-		            		  /*session.getBasicRemote().sendText(list.get(i).getTid()+","+list.get(i).getTname());*/
-		            		session.getBasicRemote().sendObject(jsonObject);
-						} catch (IOException | EncodeException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						}
+		            	
 		            }
+	            	//创建json格式数据
+	                Map map=new HashMap<>();
+	                map.put("list", list);
+	                JSONObject json = JSONObject.fromObject(map);
+	                String jsons=json.toString();
+	                System.out.println(json+"=======================json");
+	                System.out.println(jsons+"=======================jsons");
+	            	try {
+	            		  session.getBasicRemote().sendText(jsons);
+	            		/*session.getBasicRemote().sendObject(list.get(i));*/
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 		            currentIndex = list.size();
 	            }
 	            try {
-	                Thread.sleep(9000);
+	                Thread.sleep(1000);
 	            } catch (InterruptedException e) {
 	                // TODO Auto-generated catch block
 	                e.printStackTrace();
 	            }
 		 }
-		 
 	}
-
 }

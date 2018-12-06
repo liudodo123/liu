@@ -17,7 +17,6 @@
 			title: {
 	            text: 'ECharts折线图'
 	        },
-
 			tooltip : {
 				show : true
 			},
@@ -36,10 +35,10 @@
 			} ]
 		};
 		//加载数据到option
-		//loadData(option);
+		loadData(option);
 		//设置option
-		myChart.setOption(option);
-        
+		//myChart.setOption(option);
+		function loadData(option) {
 		var socket;
 		if(!window.WebSocket){
 			window.WebSocket = window.MozWebsocket;
@@ -48,46 +47,24 @@
 			socket = new WebSocket("ws://localhost:8080/websocket");
 			socket.onmessage = function(event){
 				console.log(event.data);
-				var data = (event.data + '').split(',');
-				var a=event.data=(data[0]);
-				/* var a1='[{ "tid": "'+a+'"}]'; */
-				var b=event.data=(data[1]);
-				/* var b1='[{ "tname": "'+b+'"}]';
-				var cc='[{ "tname": "'+b+'","tid": '+a+'}]'; */
-				var aa=option.xAxis[0].data = [];
-				aa+=b;
-				for (var i=0; i<b.length; i++) {
-					option.xAxis[0].data.push(b);
-					console.log(aa);
-					b++;
-				}
-				option.series[0].data = [];
-				for (var i=0; i<a.length; i++) {
-					option.series[0].data.push(a);
-					console.log(a);
-				}
-				
-				/* var result = jQuery.parseJSON(cc); */
-				/* var result = eval('(' + cc + ')');
-				if(result){
+				var data =eval('(' + event.data + ')'); 
+				var length1=data.list.length;
+				if(data){
 						//初始化xAxis[0]的data
 						option.xAxis[0].data = [];
-					for (var i=0; i<result.length; i++) {
-						option.xAxis[0].data.push(result[i].tname);
-						console.log(result[i].tname);
+					for (var i=0; i<data.list.length; i++) {
+						option.xAxis[0].data.push(data.list[i].tname);
 					}
 						//初始化series[0]的data
 						option.series[0].data = [];
-					for (var i=0; i<result.length; i++) {
-						option.series[0].data.push(result[i].tid);
-						console.log(result[i].tid);
+					for (var i=0; i<data.list.length; i++) {
+						option.series[0].data.push(data.list[i].tid);
 					}
-					myChart.setOption(option);
-				} */
+				}
+				myChart.setOption(option);
 		        /* setMessageInnerHTML(event.data); */
 				var ta = document.getElementById("responseContent");
 				ta.value += event.data + "\r\n";
-				myChart.setOption(option);
 			};
 			socket.onopen = function(event){
 				var ta = document.getElementById("responseContent");
@@ -112,7 +89,7 @@
 				alert('websocket链接没有建立成功');
 			}
 		}
-		
+		}
 	</script>
 	
 	</body>

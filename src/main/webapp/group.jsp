@@ -100,9 +100,28 @@
 						</p>
 						<div class="chart equity_chart">
 							<div style="position: relative; overflow: hidden; width: 260px; height: 166px;">
-								<canvas width="260" height="166" data-zr-dom-id="zr_0" style="position: absolute; left: 0px; top: 0px; width: 260px; height: 166px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas>
+								
 							</div>
 						</div>
+						<div class="profitContainer">
+					            <div>
+					                当月收益率
+					                <p class="center"><span style="color:red">1277.45%</span> </p>
+					            </div>
+					            <div>
+					                <p class="yesterdayProfit">最大回撤率</p>
+					                <p class="center">-103.09%</p>
+					            </div>
+					            <div class="updateTime">
+					                最近更新时间
+					                <p class="center"><span style="color:green">49分钟</span> 前</p>
+					            </div>
+					    </div>
+					    <div>
+				            <span class="quantMoney orderquantMoney">6000</span><span class="indidgroup orderindidgroup">量币/期</span>
+				              <input type="button" class="btnTry" value="试用"  style="background-color: rgb(181, 181, 181);">
+				              <input type="button" class="btnBuy" value="租用"  status="0">
+				        </div>   
 					</div>
 				</div>
 			</div>

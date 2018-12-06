@@ -1,0 +1,332 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: '微软雅黑';
+}
+body {
+    background-color: #f6f6f6;
+    font-family: Microsoft YaHei;
+    color: #333;
+}
+.iframe_main {
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+    margin-top: 0px;
+    min-height: 500px;
+    float: right;
+    background-color: #F6F6F6;
+}
+#subpage_content {
+    width: 977px;
+    float: left;
+    min-height: 760px;
+    padding-bottom: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-left: 10px;
+}
+.subpage_right_one {
+    width: 90%;
+    height: auto;
+    margin: 0 5%;
+    padding-bottom: 26px;
+    border-bottom: 1px dotted #999;
+    overflow: hidden;
+}
+.p_title_new {
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 17px;
+    font-size: 16px;
+    color: #474e5d;
+    margin-top: 52px;
+}
+.accountInfo_left {
+    width: 30%;
+    height: auto;
+    overflow: hidden;
+    float: left;
+}
+.photo {
+    width: 120px;
+    height: 120px;
+    border: 3px solid #dedede;
+    margin-top: 55px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.photo img {
+    width: 100%;
+}
+input[type='button'] {
+    outline: none;
+}
+.huan {
+    width: 82px;
+    height: 30px;
+    background-color: #ff794e;
+    color: #fff;
+    margin-top: 19px;
+    margin-left: 42px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    border: none;
+}
+.hide {
+    display: none;
+}
+.accountInfo_right {
+    margin-top: 54px;
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    float: left;
+}
+.accountInfo_name p {
+    float: left;
+    font-size: 16px;
+    color: #666;
+    height: 39px;
+    line-height: 39px;
+}
+.accountInfo_name input {
+    width: 304px;
+    height: 39px;
+    border: 1px solid #bdbdbd;
+    margin-left: 15px;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
+.accountInfo_sex {
+    overflow: hidden;
+    margin-top: 30px;
+}
+.accountInfo_sex p {
+    float: left;
+    font-size: 16px;
+    color: #666;
+    width: 32px;
+}
+.accountInfo_sex label {
+    float: left;
+    margin-left: 18px;
+    font-size: 14px;
+    color: #000;
+    margin-top: 2px;
+}
+.accountInfo_sex label input {
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+}
+.accountInfo_birday {
+    margin-top: 32px;
+}
+.accountInfo_birday p {
+    float: left;
+    font-size: 16px;
+    color: #666;
+    padding-right: 17px;
+    height: 36px;
+    line-height: 36px;
+}
+.accountInfo_birday select {
+    padding: 0 0 0 13px;
+    height: 36px;
+}
+.accountInfo_birday span {
+    font-size: 14px;
+    color: #666;
+    padding: 0 12px;
+}
+.wechatInfo {
+    width: 304px;
+    height: 39px;
+    border: 1px solid #bdbdbd;
+    margin-left: 15px;
+    padding-left: 12px;
+    box-sizing: border-box;
+    border: none;
+}
+.accountInfo_brief {
+    margin-top: 30px;
+}
+.accountInfo_brief p {
+    float: left;
+    font-size: 16px;
+    color: #666;
+}
+#txt_resume {
+    width: 400px;
+    height: 110px;
+    resize: none;
+}
+.accountInfo_brief textarea {
+    border: 1px solid #bdbdbd;
+    margin-left: 16px;
+}
+.accountInfo_Submit {
+    width: 307px;
+    height: 35px;
+    background-color: #ff794e;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 35px;
+    margin-top: 25px;
+    margin-left: 48px;
+    border: none;
+}
+.subpage_right_three {
+    width: 90%;
+    margin: 2px 5% 0 5%;
+    border-top: 1px dotted #666;
+    border-bottom: 1px dotted #666;
+    padding-bottom: 80px;
+}
+.p_title_new {
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 17px;
+    font-size: 16px;
+    color: #474e5d;
+    margin-top: 52px;
+}
+.accountInfo_three {
+    margin-top: 67px;
+    margin-left: 80px;
+}
+.clearfix {
+    zoom: 1;
+}
+.land_pwd p, .mail p, .photo1 p {
+    float: left;
+    font-size: 14px;
+    color: #666;
+}
+.land_pwd span, .mail span, .photo1 span {
+    width: 300px;
+    height: 30px;
+    border: none;
+    float: left;
+    font-size: 20px;
+    margin-left: 32px;
+}
+.land_pwd div, .mail div, .photo1 div {
+    width: 82px;
+    height: 30px;
+    background-color: #ff794e;
+    float: left;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.mail {
+    margin-top: 22px;
+}
+.land_pwd p, .mail p, .photo1 p {
+    float: left;
+    font-size: 14px;
+    color: #666;
+}
+.land_pwd div, .mail div, .photo1 div {
+    width: 82px;
+    height: 30px;
+    background-color: #ff794e;
+    float: left;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.photo1 {
+    margin-top: 22px;
+}
+.subpage_right_four {
+    width: 93%;
+    min-height: 200px;
+    margin: 0 5%;
+    margin-top: 2px;
+    border-top: 1px dotted #999;
+}
+.accountInfo_four {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.accountInfo_four > span {
+    cursor: pointer;
+    text-align: center;
+    margin-left: 150px;
+    display: inline-block;
+    line-height: 42px;
+    width: 100px;
+    height: 36px;
+}
+.accountInfo_four > span {
+    cursor: pointer;
+    text-align: center;
+    margin-left: 150px;
+    display: inline-block;
+    line-height: 42px;
+    width: 100px;
+    height: 36px;
+}
+.isquan {
+    color: #ed2031;
+    border-bottom: solid 2px #ed2031;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

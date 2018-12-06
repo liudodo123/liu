@@ -6,9 +6,6 @@ import java.util.List;
 
 import javax.persistence.metamodel.SetAttribute;
 import javax.websocket.Session;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 import cn.jbolt.common.controller.WebSocketController;
 import cn.jbolt.common.model.Topic;
 

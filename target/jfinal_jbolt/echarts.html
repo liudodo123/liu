@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>折线图</title>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+		<script src="echarts.min.js"></script>
+	</head>
+	<body>
+	
+		<div id="main" style="width: 600px;height:400px;"></div>
+		<textarea id="responseContent" style="width: 300px;height: 200px;"></textarea>
+		<script type="text/javascript">
+		
+		var myChart = echarts.init(document.getElementById('main'));
+		var option = {
+			title: {
+	            text: 'ECharts折线图'
+	        },
+			tooltip : {
+				show : true
+			},
+			legend : {
+				data : [ '销量' ]
+			},
+			xAxis : [ {
+				type : 'category'
+			} ],
+			yAxis : [ {
+				type : 'value'
+			} ],
+			series : [ {
+				name : '销量',
+				type : 'line'
+			} ]
+		};
+		//加载数据到option
+		//loadData(option);
+		//设置option
+		myChart.setOption(option);
+        
+		var socket;
+		if(!window.WebSocket){
+			window.WebSocket = window.MozWebsocket;
+		}
+		if(window.WebSocket){
+			socket = new WebSocket("ws://localhost:8080/websocket");
+			socket.onmessage = function(event){
+				console.log(event.data);
+				var data = (event.data + '').split(',');
+				var a=event.data=(data[0]);
+				var b=event.data=(data[1]);
+				var option = myChart.getOption();
+				option.xAxis[0].data = [];
+				for (var i=0; i<b.length; i++) {
+					option.xAxis[0].data.push(b);
+				}
+				option.series[0].data = [];
+				for (var i=0; i<a.length; i++) {
+					option.series[0].data.push(a);
+					console.log(a);
+				}
+				myChart.setOption(option,true);
+				
+				
+				var ta = document.getElementById("responseContent");
+				ta.value += event.data + "\r\n";
+				/* myChart.setOption(option); */
+			};
+			socket.onopen = function(event){
+				var ta = document.getElementById("responseContent");
+				ta.value = "您当前的浏览器支持websocket请进行后续操作\r\n";
+			};
+			socket.onclose = function(event){
+				var ta = document.getElementById("responseContent");
+				ta.value = "";
+				ta.value = "websocket链接关闭\r\n";
+			}
+		}else{
+			alert("您的浏览器不支持websocket");
+		}
+		function send(message){
+			if(!window.WebSocket){
+				return;
+			}
+			alert(socket.readyState);
+			if(socket.readyState == WebSocket.OPEN){
+				socket.send(message);
+			}else{
+				alert('websocket链接没有建立成功');
+			}
+		}
+		
+	</script>
+	
+	</body>
+</html>
