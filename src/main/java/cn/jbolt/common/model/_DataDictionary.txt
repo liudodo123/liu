@@ -44,3 +44,22 @@ Table: topic
  tname | VARCHAR(50) | NO   |     |         |         
 -------+-------------+------+-----+---------+---------
 
+Table: strategy
+-----------------+---------------+------+-----+-------------------+---------
+ Field           | Type          | Null | Key | Default           | Remarks 
+-----------------+---------------+------+-----+-------------------+---------
+ sid             | INT(10)       | NO   | PRI |                   | 策略id    
+ sname           | VARCHAR(255)  | YES  |     |                   | 策略名字    
+ myield          | VARCHAR(255)  | YES  |     |                   | 当月收益率   
+ fyield          | VARCHAR(255)  | YES  |     |                   | 实盘收益率   
+ ayield          | VARCHAR(255)  | YES  |     |                   | 年化收益率   
+ mdrawdown       | VARCHAR(255)  | YES  |     |                   | 最大回撤值   
+ tfrequency      | VARCHAR(255)  | YES  |     |                   | 交易频率    
+ updatetime      | TIMESTAMP(19) | YES  |     | CURRENT_TIMESTAMP | 最近更新时间  
+ gearing         | VARCHAR(255)  | YES  |     |                   | 杠杆倍数    
+ incomerisk      | VARCHAR(255)  | YES  |     |                   | 收益风险比   
+ winning         | VARCHAR(255)  | YES  |     |                   | 胜率      
+ profit          | VARCHAR(255)  | YES  |     |                   | 盈亏比     
+ daysoffirmoffer | VARCHAR(255)  | YES  |     |                   | 实盘天数    
+-----------------+---------------+------+-----+-------------------+---------
+

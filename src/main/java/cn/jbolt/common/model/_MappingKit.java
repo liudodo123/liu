@@ -20,6 +20,7 @@ public class _MappingKit {
 		arp.addMapping("news", "nid", News.class);
 		arp.addMapping("news_users", "uid", NewsUsers.class);
 		arp.addMapping("topic", "tid", Topic.class);
+		arp.addMapping("strategy", "sid", Strategy.class);
 	}
 }
 

@@ -1022,3 +1022,55 @@ Caused by: java.sql.SQLException: Parameter index out of range (2 > number of pa
 	at com.jfinal.plugin.activerecord.Model.find(Model.java:642)
 	at com.jfinal.plugin.activerecord.Model.find(Model.java:660)
 	... 27 more
+
+2018-12-07 17:06:52
+[WARN]-[Thread: http-bio-8080-exec-1]-[com.jfinal.core.ActionHandler.handleActionException()]: 400 Bad Request: /strategyList/sid=1
+Can not parse the parameter "sid=1" to Integer value.
+
+2018-12-07 18:32:53
+[WARN]-[Thread: http-bio-8080-exec-4]-[com.jfinal.core.ActionHandler.handleActionException()]: 400 Bad Request: /account/sid
+Can not parse the parameter "sid" to Integer value.
+
+2018-12-07 18:35:38
+[WARN]-[Thread: http-bio-8080-exec-7]-[com.jfinal.core.ActionHandler.handleActionException()]: 400 Bad Request: /account/sid
+Can not parse the parameter "sid" to Integer value.
+
+2018-12-07 18:35:47
+[WARN]-[Thread: http-bio-8080-exec-10]-[com.jfinal.core.ActionHandler.handleActionException()]: 400 Bad Request: /account/sid
+Can not parse the parameter "sid" to Integer value.
+
+2018-12-07 18:46:20
+[WARN]-[Thread: http-bio-8080-exec-9]-[com.jfinal.core.ActionHandler.handleActionException()]: 400 Bad Request: /account/sid
+Can not parse the parameter "sid" to Integer value.
+
+2018-12-10 10:01:47
+[WARN]-[Thread: http-bio-8080-exec-4]-[com.jfinal.core.ActionHandler.handleActionException()]: 400 Bad Request: /account/%22+sid+%22
+Can not parse the parameter "%22+sid+%22" to Integer value.
+
+2018-12-10 10:01:56
+[WARN]-[Thread: http-bio-8080-exec-5]-[com.jfinal.core.ActionHandler.handleActionException()]: 400 Bad Request: /account/%22+sid+%22
+Can not parse the parameter "%22+sid+%22" to Integer value.
+
+2018-12-10 10:02:21
+[WARN]-[Thread: http-bio-8080-exec-8]-[com.jfinal.core.ActionHandler.handleActionException()]: 400 Bad Request: /account/%22+sid+%22
+Can not parse the parameter "%22+sid+%22" to Integer value.
+
+2018-12-10 10:02:23
+[WARN]-[Thread: http-bio-8080-exec-7]-[com.jfinal.core.ActionHandler.handleActionException()]: 400 Bad Request: /account/%22+sid+%22
+Can not parse the parameter "%22+sid+%22" to Integer value.
+
+2018-12-10 10:02:23
+[WARN]-[Thread: http-bio-8080-exec-9]-[com.jfinal.core.ActionHandler.handleActionException()]: 400 Bad Request: /account/%22+sid+%22
+Can not parse the parameter "%22+sid+%22" to Integer value.
+
+2018-12-10 10:02:23
+[WARN]-[Thread: http-bio-8080-exec-10]-[com.jfinal.core.ActionHandler.handleActionException()]: 400 Bad Request: /account/%22+sid+%22
+Can not parse the parameter "%22+sid+%22" to Integer value.
+
+2018-12-10 10:02:23
+[WARN]-[Thread: http-bio-8080-exec-1]-[com.jfinal.core.ActionHandler.handleActionException()]: 400 Bad Request: /account/%22+sid+%22
+Can not parse the parameter "%22+sid+%22" to Integer value.
+
+2018-12-10 10:02:52
+[WARN]-[Thread: http-bio-8080-exec-2]-[com.jfinal.core.ActionHandler.handleActionException()]: 400 Bad Request: /account/%22+sid+%22
+Can not parse the parameter "%22+sid+%22" to Integer value.

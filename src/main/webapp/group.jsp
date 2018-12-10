@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page  isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -91,10 +93,11 @@
 
 				</div>
 				<div class="strategyContainer">
+				<c:forEach items="${list}" var="list">
 					<div>
 						<p>
-							<a>
-								<span class="straName">R-灵蛇出窍-5w</span>
+							<a href="/strategyList/${list.sid}">
+								<span class="straName">${list.sname}</span>
 							</a>
 							<span class="straWriter">微量帝</span>
 						</p>
@@ -106,7 +109,7 @@
 						<div class="profitContainer">
 					            <div>
 					                当月收益率
-					                <p class="center"><span style="color:red">1277.45%</span> </p>
+					                <p class="center"><span style="color:red">${list.myield}%</span> </p>
 					            </div>
 					            <div>
 					                <p class="yesterdayProfit">最大回撤率</p>
@@ -123,6 +126,7 @@
 				              <input type="button" class="btnBuy" value="租用"  status="0">
 				        </div>   
 					</div>
+					</c:forEach>
 				</div>
 			</div>
 			<!--常见问题-->
@@ -153,5 +157,9 @@
 
 			</div>
 		</div>
+		<!--底部-->
+	<div>
+		<img src="Images/1542685416.jpg" />
+	</div>
 	</body>
 </html>

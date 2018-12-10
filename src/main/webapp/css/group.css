@@ -10,7 +10,7 @@
     position: relative;
 }
 .leftContainer {
-    width: 918px;
+    width: 942px;
     float: left;
 }
 .rightContainer h2, .leftContainer h2, .recomContainer h2 {
@@ -78,7 +78,7 @@ input[type='button'] {
     cursor: pointer;
 }
 .rightContainer {
-    width: 270px;
+    /* width: 270px; */
     margin-left: 6px;
     float: left;
 }

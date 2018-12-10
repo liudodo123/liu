@@ -7,13 +7,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>头部</title>
-<link href="css/index.css" rel="stylesheet" type="text/css"/>
-		<link href="css/group.css" rel="stylesheet" type="text/css"/>
-		<link href="css/index.css" rel="stylesheet" type="text/css"/>
-		<link rel="stylesheet" href="css/layui.css"  media="all">
-		<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
-		<script src="js/index.js"></script>
-		<script src="js/group.js"></script>
+<link href="/css/index.css" rel="stylesheet" type="text/css"/>
+		<link href="/css/group.css" rel="stylesheet" type="text/css"/>
+		<link href="/css/index.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="/css/layui.css"  media="all">
+		<script src="/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+		<script src="/js/index.js"></script>
+		<script src="/js/group.js"></script>
 </head>
 <body>
 <!--头部-->
@@ -53,7 +53,7 @@
 						</li>
 					</ul>
 					<div id="myAccount">
-						<img id="imgUserLogo" class="userLogo" src="Images/UserHeader.png"/>
+						<img id="imgUserLogo" class="userLogo" src="/Images/UserHeader.png"/>
 						<span style="display: inline-block; margin: 0 4px 0 6px; height: 34px;">我的账户</span>
 						<!--隐藏我的账户下-->
 						<div class="myquant_submenu" style="display: none;">
@@ -85,21 +85,21 @@
 			<div id="logo">
 				<div class="headerContainer">
 					 <a href="">
-					 	<img id="img_logo" src="css/modules/layer/default/loading-0.gif" />
+					 	<img id="img_logo" src="/css/modules/layer/default/loading-0.gif" />
 					 </a>
 					 <span style="display:inline-block;height:50px;width:1px;background:#ECECEC;margin-bottom: -20px;margin-left: 25px;"></span>
-					<img class="slogan" src="Images/cctv50.png"/>
+					<img class="slogan" src="/Images/cctv50.png"/>
 					<ul class="ul_menu">
 						<li class="active">
-							<a href="index.jsp">首页</a>
+							<a href="/index.jsp">首页</a>
 						</li>
 						<li>
 							<a>
-								<img style="width: 60px;vertical-align: middle;" src="Images/gr.png" />
+								<img style="width: 60px;vertical-align: middle;" src="/Images/gr.png" />
 							</a>
 						</li>
 						<li class="li_hover1">
-							<a href="group.jsp">组合</a>
+							<a href="/strategy">组合</a>
 						</li>
 						<li class="li_hover2">
 							<a>期货</a>

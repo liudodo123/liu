@@ -52,7 +52,6 @@ public class EThread extends Thread {
 		            	tid=list.get(i).getTid();
 		            	System.out.println(tname+"============================tname/n"+tid+
 		            	"==================================tid");
-		            	
 		            }
 	            	//创建json格式数据
 	                Map map=new HashMap<>();

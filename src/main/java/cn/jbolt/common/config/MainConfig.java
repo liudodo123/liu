@@ -12,7 +12,9 @@ import com.jfinal.template.Engine;
 import cn.jbolt.common.controller.IndexController;
 import cn.jbolt.common.controller.LoginController;
 import cn.jbolt.common.controller.WebSocketHandler;
+import cn.jbolt.common.model.Account;
 import cn.jbolt.common.model.NewsUsers;
+import cn.jbolt.common.model.Strategy;
 import cn.jbolt.common.model.Topic;
 
 import com.jfinal.ext.interceptor.SessionInViewInterceptor;
@@ -79,6 +81,8 @@ public class MainConfig extends JFinalConfig {
 		//_MappingKit.mapping(arp);
 		arp.addMapping("topic", Topic.class);
 		arp.addMapping("news_users", NewsUsers.class);
+		arp.addMapping("strategy", Strategy.class);
+		arp.addMapping("account", Account.class);
 		//添加到插件列表中
 		me.add(dbPlugin);
 		me.add(arp);
