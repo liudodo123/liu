@@ -7,7 +7,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>ç»å</title>
+		<title>组合</title>
 		<link href="css/index.css" rel="stylesheet" type="text/css"/>
 		<link href="css/group.css" rel="stylesheet" type="text/css"/>
 		<link rel="stylesheet" href="css/layui.css"  media="all">

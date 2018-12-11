@@ -10,8 +10,9 @@ import cn.jbolt.common.model.Topic;
 public class IndexController extends Controller{
 	
 	public void index(){
-		//render("echarts.html");
-		renderJsp("index.jsp");
+		List<Strategy> list=Strategy.dao.find("select * from strategy");
+		setAttr("list", list);
+		render("index.jsp");
 	}
 	public void echarts(){
 		List<Topic> result=Topic.dao.find("select * from topic");

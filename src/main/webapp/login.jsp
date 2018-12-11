@@ -19,6 +19,7 @@
                     <p class="loginTitle">
                         <span>登录</span>
                         <span class="noAccount">没有账号？<a href="register.html" target="_blank">免费注册</a></span>
+                        <span>${sessionScope.cw}</span>
                     </p>
                     <form action="/login/login" method="post">
                     <div class="txtContainer txtUserNameContainer">

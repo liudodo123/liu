@@ -37,14 +37,25 @@
 						<li style="position: relative; display: inline-block;">
 							<a id="HyperLink3" class="linkItem_a" href="">上传策略</a>
 						</li>
-						<li class="liSplitLine" style="display: inline-block;">|</li>
-						<li class="logout_show linkItem" style="display: inline-block;">
-							<a id="nav_register" class="linkItem_register" href="register.html">注册</a>
-						</li>
-						<li class="liSplitLine" style="display: inline-block;">|</li>
-						<li class="logout_show linkItem" style="display: inline-block;">
-							<a id="nav_login" class="linkItem_a" href="login.jsp">登录${sessionScope.user.uname}</a>
-						</li>
+						
+						<c:if test="${sessionScope.user.uname==null}">
+							<li class="liSplitLine" style="display: inline-block;">|</li>
+							<li class="logout_show linkItem" style="display: inline-block;">
+								<a id="nav_register" class="linkItem_register" href="register.html">注册</a>
+							</li>
+							<li class="liSplitLine" style="display: inline-block;">|</li>
+							<li class="logout_show linkItem" style="display: inline-block;">
+								<a id="nav_login" class="linkItem_a" href="login.jsp">登录</a>
+							</li>
+						</c:if>
+						<c:if test="${sessionScope.user.uname!=null}">
+							<li class="liSplitLine" style="display: inline-block;"></li>
+							<li class="logout_show linkItem" style="display: inline-block;">
+								<a id="nav_register" style="color: red;" class="linkItem_register" href="">${sessionScope.user.uname}</a>
+							</li>
+							<!--未登录隐藏-->
+							<li class="login_show linkItem" id="nav_logout" style="display:block;" ><a href="/login/quit">[退出]</a></li>
+						</c:if>
 						<!--未登录隐藏-->
 						<li class="login_show linkItem" id="nav_logout" style="display: none;" href="">[退出]</li>
 						<li class="login_show" style="padding: 0px 8px; display: none;">
@@ -91,7 +102,7 @@
 					<img class="slogan" src="/Images/cctv50.png"/>
 					<ul class="ul_menu">
 						<li class="active">
-							<a href="/index.jsp">首页</a>
+							<a href="/">首页</a>
 						</li>
 						<li>
 							<a>

@@ -61,7 +61,7 @@
 					累计安全不间断运行
 					<label id="xh_sum">42825</label>
 				</p>
-				<a href="#">立即注册</a>
+				<a href="register.html">立即注册</a>
 				<div>
 					注册就送
 					<a href="#">新手大礼包</a>
@@ -267,65 +267,20 @@
 			<div class="qihuozuhe_list_container">
 				<ul id="qihuozuhe_content" class="ul_qihuo rec_list_item clearfix">
 					<li>
+					<c:forEach items="${list}" var="list">
 						<ul class="clearfix">
-							<li class="limit_name sname float_left">R-灵蛇出窍-5w</li>
+							<li class="limit_name sname float_left">${list.sname }</li>
 							<li class="sprofit float_left">
 								当月收益率
-								<label>22.82%</label>
+								<label>${list.myield}</label>
 							</li>
 							<li class="sdetail float_left">
-								<a>查看详情</a>
+								<a href="/strategyList/${list.sid}">查看详情</a>
 							</li>
 						</ul>
+					</c:forEach>
 					</li>
-					<li>
-						<ul class="clearfix">
-							<li class="limit_name sname float_left">R-左右开弓-5w</li>
-							<li class="sprofit float_left">
-								当月收益率
-								<label>14.94%</label>
-							</li>
-							<li class="sdetail float_left">
-								<a>查看详情</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<ul class="clearfix">
-							<li class="limit_name sname float_left">R-华山之巅-300 ...</li>
-							<li class="sprofit float_left">
-								当月收益率
-								<label>9.83%</label>
-							</li>
-							<li class="sdetail float_left">
-								<a>查看详情</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<ul class="clearfix">
-							<li class="limit_name sname float_left">R-混沌螺纹-5w</li>
-							<li class="sprofit float_left">
-								当月收益率
-								<label>19.40%</label>
-							</li>
-							<li class="sdetail float_left">
-								<a>查看详情</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<ul class="clearfix">
-							<li class="limit_name sname float_left">R-华山之巅-500 ...</li>
-							<li class="sprofit float_left">
-								当月收益率
-								<label>7.82%</label>
-							</li>
-							<li class="sdetail float_left">
-								<a>查看详情</a>
-							</li>
-						</ul>
-					</li>
+						
 				</ul>
 			</div>
 		</div>
