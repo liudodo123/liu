@@ -14,6 +14,7 @@
 <script src="/js/index.js"></script>
 <script src="/js/group.js"></script>
 <script src="/echarts.min.js"></script>
+<script src="../js/strategy.js"></script> 
 </head>
 <body>
 	<!--头部-->
@@ -239,7 +240,7 @@
 								</tr>
 							</tbody>
 						</table>
-						<table class="hide" cellpadding="0" cellspacing="0"
+						<table class="hide" id="hidetable" cellpadding="0" cellspacing="0"
 							style="display: table;">
 							<tbody>
 								<tr>
@@ -311,6 +312,7 @@
 							</tbody>
 						</table>
 						<div class="strategyTabDivLeft">
+						<div class="dd" style="display: block;">
 							<ul style="display: block;">
 								<li>品种:</li>
 								<li class="itsTails">
@@ -353,10 +355,12 @@
 								<li><a href="javascript:;" id="toggleDescription"
 									class="hide" index="0">展开</a></li>
 							</ul>
+							</div>
 						</div>
 						<div class="highChart" id="lineChart_PortfolioBenchmark1"
 							style="display: none;"></div>
-						<div id="main" style="width: 512px; height: 290px;"></div>
+						<div id="main" style="width: 512px; height: 290px;float: right;"></div>
+						<div id="eq" style="width: 900px; height: 290px;margin: 0 auto;display: none"></div>
 					</div>
 					<div class="strategyTabDiv hide" index="1" style="display: none;">
 						<div class="highChart" index="0" id="equity_chart"
@@ -1468,5 +1472,7 @@ function loadData(option) {
 				}
 			});//AJAX
 }
+
+
 </script>
 </html>
