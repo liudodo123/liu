@@ -361,6 +361,8 @@
 							style="display: none;"></div>
 						<div id="main" style="width: 512px; height: 290px;float: right;"></div>
 						<div id="eq" style="width: 900px; height: 290px;margin: 0 auto;display: none"></div>
+						<div id="er" style="width: 900px; height: 290px;margin: 0 auto;display: none"></div>
+						<div id="et" style="width: 900px; height: 290px;margin: 0 auto;display: none"></div>
 					</div>
 					<div class="strategyTabDiv hide" index="1" style="display: none;">
 						<div class="highChart" index="0" id="equity_chart"
@@ -410,7 +412,7 @@
 							</div>
 						</div>
 						<div class="highChart" index="4" id=""
-							style="overflow-y: scroll; display: none;" loaded="true">
+							style="overflow-y: scroll; display: block;" loaded="true">
 							<div id="earnings_yield">
 								<div class="sub_title">收益率指标</div>
 								<table class="data_table" cellpadding="1" cellspacing="1">

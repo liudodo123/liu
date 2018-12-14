@@ -42,5 +42,12 @@ public class IndexController extends Controller{
 		setAttr("list", result);
 		renderJson(result);
 	}
+	public void accountmaxmin(){
+		Integer sid=getParaToInt("sid");
+		System.out.println(sid+"==========================sid");
+		List<Strategy> result=Strategy.dao.find("select MAX(a.equity) as equity,MIN(a.firmoffer) as firmoffer from account a right JOIN strategy as s on(a.aid=s.sid) where s.sid=?",sid);
+		setAttr("list", result);
+		renderJson(result);
+	}
 	
 }

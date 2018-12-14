@@ -1506,3 +1506,9 @@ Caused by: org.apache.jasper.JasperException: /element/top.jsp (line: 46, column
 	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
 	at com.jfinal.render.JspRender.render(JspRender.java:67)
 	... 19 more
+
+2018-12-14 16:52:26
+[WARN]-[Thread: http-bio-8080-exec-10]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /accountmaxmin/sid
+
+2018-12-14 16:53:04
+[WARN]-[Thread: http-bio-8080-exec-10]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /accountmaxmin/sid
